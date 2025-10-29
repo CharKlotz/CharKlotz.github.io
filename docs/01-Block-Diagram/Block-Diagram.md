@@ -6,19 +6,8 @@ tags:
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
 
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
+This block diagram shows the light sensor subsystem and how it will connect to the teams system. The 5V regulated power supply will provide power to the op-amps aswell as the light sensor itself. A signal from the photodiode will be amplified by an op-amp, and then ran through the microcontrollers ADC to then be manipulated on the software side, before being sent back as an analog signal through the DAC to be read by the lighting subsytem.
 
-
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
-
-![Example of Indivial Block diagram ](individual-block-diagram.png)
+## Block Diagram 
+![Indivial Block diagram ](<Individual Block Diagram.drawio.png>)
