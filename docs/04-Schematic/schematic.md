@@ -4,13 +4,10 @@ title: Schematic
 
 ## Overview
 
-This schematic is design to support .... (highlight functionally, power, and controller).
-
-
-![schematic](Screenshot.png){style width:"350" height:"300;"}
-**Figure ##:** Showing a example schematic.
+![schematic](EGR330_Subsystem_Schematic.png){style width:"350" height:"300;"}
+**Figure 1:** Photodiode Subsystem Schematic
 
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](ExampleSchematic.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+The schematic as a PDF download is available [*here*](EGR330_Subsystem_Schematic.pdf)
