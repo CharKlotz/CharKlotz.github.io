@@ -3,20 +3,14 @@ title: Power Budget
 ---
 
 ## Overview
-Write a overview of what you did and why you did a Power Budget.
+This power budget is intended to confirm that the subsystems 9V input from a wall adapter will be enough to power each and every component safely. This step is crucial to ensuring reliability aswell as ensuring enough headroom for safety.
 
-> Capture your power budge as a image to display. Take time to get clean breaks and a well organized layout.
-
-![budget1](budgetPg1.png){style width:"350" height:"300;"}
-
-![budget2](budgetPg2.png){style width:"350" height:"300;"}
-
-![budget3](budgetPg3.png){style width:"350" height:"300;"}
+![budget1](power-budget.png)
 
 ## Conclusions
 
-From the prepare Power Budget, .....
+From the Power Budget, we have confirmed that there is plenty of room left in terms of amperage available to power every component safely, with plenty of left over power to provide to any additional components added later on. 
 
 ## Resouces
 
-The power budget as a PDF download is available [*here*](PowerBudgetExample.pdf), and a Microsoft Excel Sheet [*here*](PowerBudgetExample.xlsx).
+The power budget as a PDF download is available [*here*](power-budget.pdf), and a Microsoft Excel Sheet [*here*](power-budget.xlsx).
