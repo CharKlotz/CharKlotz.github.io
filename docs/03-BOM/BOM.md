@@ -6,7 +6,7 @@ tags:
 ---
 
 ## Overview
-written context
+This assignment does not seem to be a part of the grading criteria for the external design review, but as a seperate assignment i plan to turn in at least a day late since i have no time currently. 
 
 ## Bill of Materials Example (as Table)
 
