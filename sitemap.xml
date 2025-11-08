@@ -26,12 +26,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/EGR304DataSheetTemplate/05-PCB/schematic/</loc>
+         <loc>https://embedded-systems-design.github.io/EGR304DataSheetTemplate/05-PCB/pcb/</loc>
          <lastmod>2025-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/EGR304DataSheetTemplate/05-Power-Budget/Power-Budget/</loc>
+         <loc>https://embedded-systems-design.github.io/EGR304DataSheetTemplate/06-Power-Budget/Power-Budget/</loc>
          <lastmod>2025-11-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
