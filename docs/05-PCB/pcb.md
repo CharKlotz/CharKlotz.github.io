@@ -1,5 +1,5 @@
 ---
-title: Schematic
+title: PCB
 ---
 
 ## Overview
@@ -18,4 +18,4 @@ The schematic as a PDF download is available here:
 [*front*](EGR304_final_project-F_Cu.pdf)
 [*back*](EGR304_final_project-B_Cu.pdf)
 
-The project .zip file can be found [*here*](EGR304_final_project.zip)
+The project .zip file, including the gerber files, can be found [*here*](EGR304_final_project.zip)
