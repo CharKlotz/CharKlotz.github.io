@@ -2,9 +2,12 @@
 title: PCB
 ---
 
-## Overview
+## PCB Pictures
 
-![schematic](EGR304_final_project-F_Cu-1.png){style width:"350" height:"300;"}
+
+## Kicad Pictures
+
+![schematic](PCB_kicad_Front.png){style width:"350" height:"300;"}
 **Figure 1:** Photodiode Subsystem PCB (*Front*)
 
 ![schematic](EGR304_final_project-B_Cu-1.png){style width:"350" height:"300;"}

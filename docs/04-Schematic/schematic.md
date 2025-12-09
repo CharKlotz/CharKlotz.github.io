@@ -11,3 +11,5 @@ title: Microcontroller Code
 ## Resouces
 
 The schematic as a PDF download is available [*here*](EGR304_final_project.pdf)
+
+The kicad project files are available [*here*](EGR304_final_project_kicad.zip)

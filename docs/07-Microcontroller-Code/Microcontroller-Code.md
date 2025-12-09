@@ -7,7 +7,7 @@ The following code was used to programmed to fulfill the needs of my light senso
 
 <details>
 
-  <summary><strong>Microcontroller Code (click to expand)</strong></summary>
+  <summary><strong>Microcontroller Code (Click to expand)</strong></summary>
   <pre><code class="language-c">
 #include "mcc_generated_files/system/system.h"
 int main(void)
@@ -90,4 +90,5 @@ int main(void)
 ## Resources
 
 The code is available [*here*](main.c)
+
 The code is available [*here*](main.c)
