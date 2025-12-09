@@ -1,5 +1,5 @@
 ---
-title: Microcontroller Code
+title: Resources
 ---
 
 ## Code: 
@@ -91,4 +91,4 @@ int main(void)
 
 The code is available [*here*](main.c)
 
-The code is available [*here*](main.c)
+The MPLabX Project file is available [*here*](EGR304_Subsystem.zip)
