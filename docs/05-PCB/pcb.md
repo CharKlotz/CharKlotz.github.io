@@ -26,6 +26,6 @@ title: PCB
 
 ## Resouces
 
-The schematic as a PDF download is available here: [*front*](PCB_kicad_Front.pdf) | [*back*](PCB_kicad_Back.pdf)
+The 3D views as PDF downloads are available here: [*front*](PCB_kicad_Front.pdf) | [*back*](PCB_kicad_Back.pdf)
 
 The kicad project files (Including Gerber files) are available [*here*](EGR304_final_project_kicad.zip)
