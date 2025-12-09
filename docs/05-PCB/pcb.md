@@ -4,11 +4,14 @@ title: PCB
 
 ## PCB Pictures
 
-![schematic](PCB_kicad_Front.png){style width:"350" height:"300;"}
-**Figure 1:** Photodiode Subsystem PCB (*Front*)
+![schematic](PCB_Soldered_Front.jpg){style width:"350" height:"300;"}
+**Figure 1:** Completed Photodiode Subsystem PCB (*Front*)
 
-![schematic](PCB_kicad_Front.png){style width:"350" height:"300;"}
-**Figure 2:** Photodiode Subsystem PCB (*Front*)
+![schematic](PCB_Unsoldered_Front.jpg){style width:"350" height:"300;"}
+**Figure 2:** Unsoldered Photodiode Subsystem PCB (*Front*)
+
+![schematic](PCB_Unsoldered_Back.jpg){style width:"350" height:"300;"}
+**Figure 2:** Unsoldered Photodiode Subsystem PCB (*Back*)
 
 
 ## Kicad Pictures
