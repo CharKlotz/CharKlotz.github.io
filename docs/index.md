@@ -33,4 +33,10 @@ for<br>
 
 * To review the schematic for the subsystem, you can review it in the ["Schematic"](https://charklotz.github.io/04-Schematic/schematic/) section of the datasheet.
 
-* To review how the subsytem will be powered and, you can review it in the ["Power Budget"](https://charklotz.github.io/05-Power-Budget/New-md-file/) section of the datasheet.
+* To review the pcb of the subsystem, you can review it in the ["PCB"](https://charklotz.github.io/05-PCB/pcb/) section of the datasheet.
+
+* To review how the subsytem will be powered and, you can review it in the ["Power Budget"](https://charklotz.github.io/06-Power-Budget/Power-Budget/) section of the datasheet.
+
+* To review the code of the subsystem and the MPLabX project file, you can review it in the ["Resources"](https://charklotz.github.io/07-Resources/Resources/) section of the datasheet.
+
+* To view reflections for a possible version 2, you can review it in the ["Hardware V2"](https://charklotz.github.io/08-Hardware-V2/hardware-v2/) section of the datasheet.
