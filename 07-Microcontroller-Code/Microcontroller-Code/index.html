@@ -827,9 +827,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resouces" class="md-nav__link">
+  <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Resouces
+      Resources
     </span>
   </a>
   
@@ -941,9 +941,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resouces" class="md-nav__link">
+  <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Resouces
+      Resources
     </span>
   </a>
   
@@ -977,6 +977,7 @@
 <h2 id="code">Code:</h2>
 <p>The following code was used to programmed to fulfill the needs of my light sensor subsystem</p>
 <details>
+
   <summary><strong>Microcontroller Code (click to expand)</strong></summary>
   <pre><code class="language-c">
 #include "mcc_generated_files/system/system.h"
@@ -1028,10 +1029,12 @@ int main(void)
             delay_needed_ms=(uint16_t)(1000UL - (analog_out * 950UL / 255UL));
             printf("desired ms = %u\n\r",delay_needed_ms);
             for (n = 0; n<delay_needed_ms; n++) { __delay_ms(1); } else __delay_ms(1000); when subsystem is off according to jt's (if needed): debugled_output_sethigh(); __delay_ms(50); debugled_output_setlow(); __delay_ms(200); return 0; < code></delay_needed_ms;></code></pre><code class="language-c">
+
 </code></details><code class="language-c">
 
-<h2 id="resouces">Resouces</h2>
-<p>The code is available <a href="../main.c"><em>here</em></a></p></code>
+<h2 id="resources">Resources</h2>
+<p>The code is available <a href="../main.c"><em>here</em></a>
+The code is available <a href="../main.c"><em>here</em></a></p></code>
 
 
 
