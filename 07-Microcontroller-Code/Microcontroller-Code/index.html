@@ -26,7 +26,7 @@
 
     
       
-        <title>Power Budget - EGR 304 Charlie Klotz Data Sheet</title>
+        <title>Microcontroller Code - EGR 304 Charlie Klotz Data Sheet</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#code" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Power Budget
+              Microcontroller Code
             
           </span>
         </div>
@@ -787,7 +787,7 @@
           
   
   <span class="md-ellipsis">
-    Power Budget
+    Microcontroller Code
   </span>
   
 
@@ -798,7 +798,7 @@
         
   
   <span class="md-ellipsis">
-    Power Budget
+    Microcontroller Code
   </span>
   
 
@@ -818,18 +818,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#code" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusions
+      Code:
     </span>
   </a>
   
@@ -941,18 +932,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#code" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusions
+      Code:
     </span>
   </a>
   
@@ -990,15 +972,66 @@
   
 
 
-  <h1>Power Budget</h1>
+  <h1>Microcontroller Code</h1>
 
-<h2 id="overview">Overview</h2>
-<p>This power budget is intended to confirm that the subsystems 9V input from a wall adapter will be enough to power each and every component safely. This step is crucial to ensuring reliability aswell as ensuring enough headroom for safety.</p>
-<p>HEEE</p>
-<h2 id="conclusions">Conclusions</h2>
-<p>From the Power Budget, we have confirmed that there is plenty of room left in terms of amperage available to power every component safely, with plenty of left over power to provide to any additional components added later on. </p>
+<h2 id="code">Code:</h2>
+<p>The following code was used to programmed to fulfill the needs of my light sensor subsystem</p>
+<details>
+  <summary><strong>Microcontroller Code (click to expand)</strong></summary>
+  <pre><code class="language-c">
+#include "mcc_generated_files/system/system.h"
+int main(void)
+{
+    adc_result_t analog_in=0;
+    uint8_t analog_out=0;
+    uint16_t ADC_MAX=4096;
+    SYSTEM_Initialize();
+    ADC_Initialize();
+    const float vref = 5;
+    const float vin_min = 0.3;
+    const float vin_max = 1.3;
+    uint16_t delay_needed_ms = 0;
+    uint16_t n = 0;
+
+    while(1)
+    {
+        if(JT_Input_GetValue() == 1)
+//        if (1 == 1)
+        {
+        ADC_ChannelSelect(ADC_CHANNEL_ANA0);
+        ADC_ConversionStart();
+        while (!ADC_IsConversionDone());
+        analog_in=ADC_ConversionResultGet();
+
+        float vin = (analog_in * vref/ADC_MAX);
+
+        if (vin &lt;= vin_min)
+            analog_out = 0;
+        else if (vin &gt;= vin_max)
+            analog_out = 255;
+        else 
+            analog_out = (((vin-vin_min) / (vin_max - vin_min)) * 255); // ratio of current voltage to the whole range * 255 to make output 0-255
+
+        DAC1_SetOutput(analog_out);
+
+//        analog_out=analog_in&gt;&gt;4;
+//        DAC1_SetOutput(analog_out);
+        // If Jon's system does not work:
+        printf("VIn: %f\n\r",vin);
+        printf("Analog out: %u\n\r",analog_out);
+
+
+        DebugLED_Output_Toggle();
+
+        if (analog_out != 0)
+        {
+            delay_needed_ms=(uint16_t)(1000UL - (analog_out * 950UL / 255UL));
+            printf("desired ms = %u\n\r",delay_needed_ms);
+            for (n = 0; n<delay_needed_ms; n++) { __delay_ms(1); } else __delay_ms(1000); when subsystem is off according to jt's (if needed): debugled_output_sethigh(); __delay_ms(50); debugled_output_setlow(); __delay_ms(200); return 0; < code></delay_needed_ms;></code></pre><code class="language-c">
+</code></details><code class="language-c">
+
 <h2 id="resouces">Resouces</h2>
-<p>The power budget as a PDF download is available <a href="power-budget.pdf"><em>here</em></a>, and a Microsoft Excel Sheet <a href="power-budget.xlsx"><em>here</em></a>.</p>
+<p>The code is available <a href="../main.c"><em>here</em></a></p></code>
 
 
 
