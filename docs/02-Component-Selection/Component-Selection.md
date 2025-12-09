@@ -16,4 +16,4 @@ title: Component Selection Example
 
 **Decision Making Process:** A photodiode is preferred because it provides a linear and accurate response to light. It will require an external amplifier circuit, but its predictable behavior will make it more reliable than other options for our use case. This sensor will make it easy to take ambient light readings of the room to be pushed out to the individual lighting subsystem, to help fulfill our project needs.
 
-**Other Components:** The rest of the components used will be the ones provided already in class, such as the LM7805 Voltage Regulator or MCP6004 OP-Amp.
+**Other Components:** The photodiode was the only major part of my subsytem that needed to be ordered. The rest of the components used were the ones provided already in class, such as the LM7805 Voltage Regulator or MCP6004 OP-Amp.

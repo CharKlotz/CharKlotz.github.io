@@ -6,6 +6,7 @@ title: Microcontroller Code
 The following code was used to programmed to fulfill the needs of my light sensor subsystem
 
 <details>
+
   <summary><strong>Microcontroller Code (click to expand)</strong></summary>
   <pre><code class="language-c">
 #include "mcc_generated_files/system/system.h"
@@ -83,8 +84,10 @@ int main(void)
     return 0;
 }
  </code></pre>
+
 </details>
 
-## Resouces
+## Resources
 
+The code is available [*here*](main.c)
 The code is available [*here*](main.c)

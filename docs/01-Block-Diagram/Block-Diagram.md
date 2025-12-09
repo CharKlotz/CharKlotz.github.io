@@ -12,4 +12,8 @@ This block diagram shows the light sensor subsystem and how it will connect to t
 ## Block Diagram 
 ![Indivial Block diagram ](<Individual Block Diagram.png>)
 
+## Explanation
+
+The photodiode will read light intensity of the room and generate a current based on how bright it is. This current goes into an op-amp, and is amplified into a 0-5V signal. This signal can then be read and used to turn on or off a grow light based on a plants needs, fullfilling the product requirements.
+
 Photodiode Light Sensor Block Diagram | [PDF Download](<Individual Block Diagram.pdf>)
