@@ -1019,9 +1019,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#version-20" class="md-nav__link">
+  <a href="#microcontrollermodule-startup-tip" class="md-nav__link">
     <span class="md-ellipsis">
-      Version 2.0
+      Microcontroller/Module Startup Tip
     </span>
   </a>
   
@@ -1289,9 +1289,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#version-20" class="md-nav__link">
+  <a href="#microcontrollermodule-startup-tip" class="md-nav__link">
     <span class="md-ellipsis">
-      Version 2.0
+      Microcontroller/Module Startup Tip
     </span>
   </a>
   
@@ -1341,19 +1341,30 @@
   <h1>Reflection</h1>
 
 <h2 id="review-of-modules-sucess">Review of Module's Sucess</h2>
-<p>dfgh</p>
-<h2 id="version-20">Version 2.0</h2>
-<p>dfghj</p>
+<p>The major functionality of the Human Machine Interface was completed in the sense that a person should be able to correctly interact with the machine through it, causing for different pre-defined functionalities to occur. This was achieved through the interaction of values through buttons, aswell as instant feedback through the OLED display, aswell as the ability to pass through other teammates values. </p>
+<p>Unfortunately full functionality of our rover could not be confirmed as not everyone had their boards in a workable state to test everything by the end. Some messaging was achieved, however, at least through mine and another persons PCB, proving its functionality. </p>
+<p>Overall, module requirements should have been fully met, but there was no way of completely confirming.</p>
+<h2 id="microcontrollermodule-startup-tip">Microcontroller/Module Startup Tip</h2>
+<p>I definetely tried to do too much at once when populating the pcb. I definetely recommend placing components 1 by 1, checking continuity, and verifying functionality of individual components once down however possible. This caused a major headache with the microcontroller, where when you dont know if its the power input thats wrong, or the boot logic, or the switch connections, it could get difficult to debug fast.</p>
+<p>Trying to do too much with data received and sent through TX and RX at once could cause everything to break. Verify you receive at all, then go step by step to process it into what you want.</p>
 <h2 id="lessons-learned">Lessons Learned</h2>
 <ol>
-<li>ghj</li>
-<li>ghds</li>
+<li>Read datasheets carefully, look for unique pin details or restrictions, recommended circuits/logic.</li>
+<li>Keep TX and RX communication very very simple to start off with.</li>
+<li>Sort out the team API before things get too far. </li>
+<li>This stuff takes longer than you think. Don't give yourself hours to do things.</li>
+<li>Work up with your code slowly, find what works, and build off of it. </li>
+<li>Check EVERYTHING</li>
+<li>Debug more with breadboard circuits.</li>
+<li>More testing points and LEDS</li>
+<li>Order extra parts</li>
+<li>Update your github as you go</li>
 </ol>
 <h2 id="recommendations-for-future-students">Recommendations for Future Students</h2>
 <ol>
-<li>sfev</li>
-<li>sfvvf</li>
-<li></li>
+<li>Build your PCB early, give yourself time to find your own mistakes. Get it looked at by the professor in detail, then submit.</li>
+<li>Spend extra time with labs that will have to do with the functionality of your subsystem.</li>
+<li>When things aren't working, focus on the small victories and build off of them. </li>
 </ol>
 
 
