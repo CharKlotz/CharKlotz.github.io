@@ -1,12 +1,11 @@
 ---
-title: Test 2 for scroll
+title: Human Machine Interface API
 tags:
 - tag1
 - tag2
 ---
 
 ## Overview
-written context
 
 The Human Machine Interface subsystem is using a ESP32 running MicroPython, paired with an OLED display. It is intended to be used to send commands to the Motor subsystem, and receive sensor readings from the Hall Effect subsystem. 
 
