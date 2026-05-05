@@ -2,13 +2,6 @@
 title: Hardware V2
 ---
 
-
-
-
-If you were to create a "Version 2.0" of your hardware design, discuss what could be improved in the hardware design and why it should be improved. Use the schematic section above to support the discussion. ( page minimum)
-
-
-
 ## Overview
 If I could do the Human Machine Interface portion of our project over again, there are a few things i'd change about the overall design to make it easier to use. Overall, the subsystem worked as intended, so improvements are mainly going to be quality of life / nit-picky things.
 
