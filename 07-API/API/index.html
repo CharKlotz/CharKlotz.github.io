@@ -1156,6 +1156,51 @@
 
 <h2 id="overview">Overview</h2>
 <p>written context</p>
+<p>The Human Machine Interface subsystem is using a ESP32 running MicroPython, paired with an OLED display. It is intended to be used to send commands to the Motor subsystem, and receive sensor readings from the Hall Effect subsystem. </p>
+<p>The subsystem relays all information passed through on the OLED display for debugging purposes. It follows the required message protocols defined by our team, using the correct team ID, sender ID, and receiver ID. </p>
+<p>Below are all the messages intended to be used by the time the project was due. Due to the final state of our project, we were not able to have very many.</p>
+<table>
+<thead>
+<tr>
+<th>Message Type</th>
+<th>Full Message Format</th>
+<th>Payload Description</th>
+<th>Byte Count</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sensor Data</td>
+<td>AZTCvalueYB</td>
+<td>value is the reading from the sensor as a string</td>
+<td>2 bytes for AZ + 2 bytes for TC + N bytes for value + 2 bytes for YB</td>
+<td>Receives the most recent sensor reading</td>
+</tr>
+<tr>
+<td>Data Request</td>
+<td>AZTCREQYB</td>
+<td>REQ indicates a request for sensor data</td>
+<td>2 bytes for AZ + 2 bytes for TC + 3 bytes for REQ + 2 bytes for YB</td>
+<td>Requests the current Hall effect sensor reading</td>
+</tr>
+<tr>
+<td>Motor Command</td>
+<td>AZCKgoYB</td>
+<td>go indicates a request for motor action</td>
+<td>2 bytes for AZ + 2 bytes for CK + 2 bytes for go + 2 bytes for YB</td>
+<td>Tells the motor when to go</td>
+</tr>
+<tr>
+<td>Motor Stop</td>
+<td>AZCKstopYB</td>
+<td>stop indicates a request to stop the motor</td>
+<td>2 bytes for AZ + 2 bytes for CK + 4 bytes for stop + 2 bytes for YB</td>
+<td>Tells the motor when to stop</td>
+</tr>
+</tbody>
+</table>
+<p>This API makes sure that the Human Machine Interface subsystem can communicate properly with the motor module, the wireless module, and the sensor module. This API reflects the final functionality of the subsytem.</p>
 
 
 
