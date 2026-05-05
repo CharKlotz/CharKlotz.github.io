@@ -6,7 +6,7 @@ tags:
 ---
 
 ## Overview
-Written context needs to added!
+This bill of materials defined the components used in the use of the Human Machine Interface. The BOM is meant to show all of the needed hardware and electronics to support the full functionality of the subsystem. The listed components are meant to fulfill these needs and requirments fully.
 
 
 ## Bill of Materials (Example as Image)
