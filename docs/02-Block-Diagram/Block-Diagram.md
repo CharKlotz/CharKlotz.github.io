@@ -11,7 +11,7 @@ This block diagram shows how the subsystem will interact with the rover wireless
 
 ## Block Diagram 
 
-![Individual Block Diagram](Team306BlockDiagramIndividual.drawio.png)
+![Individual Block Diagram](individualBlockDiagram.png)
 
 ## Decision Making Process
 This subsystem was designed to act as a human interface for our rover. To do that, it was designed as a hub for communication through the header pins. Information is received through the header pins, and is processed by the ESP32 microcontroller. Data strings are then passed through if needed, but are also always displayed on the OLED screen for debugging. 
