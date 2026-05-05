@@ -15,6 +15,8 @@ The following sections are the selected major components necessary for the human
 
 ### No Sensor
 ### No Actuator
+### Microcontroller
+ESP32 Was chosen over the PIC due to its wifi functionality (Human Machine Interface needs to interface with WIFI components).
 ### Screen
 OLED Provided in class is perfect for the final project as an SMD part is not required for the screen.
 
@@ -28,8 +30,16 @@ With all that, the only thing needed to be chosen for my subsystem ended up bein
 
 | **Component**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](pushbuttonFinal.jpg)<br> Small push button from amazon<br>$0.22/each<br>[link to product](https://www.amazon.com/dp/B07HCF49KC?ref=ppx_yo2ov_dt_b_fed_asin_title)                 | \* TBD<br>\* TBD<br>\* TBD                                               | \* TBD<br>\* TBD. | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](pushbuttonchoice1.jpg)<br> XC1259TR-ND surface mount crystal<br>$1/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](pushbuttonchoice2.jpg)<br> XC1259TR-ND surface mount crystal<br>$1/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. |
+| ![](pushbuttonFinal.jpg)<br> Small push button from amazon<br>$0.22/each<br>[link to product](https://www.amazon.com/dp/B07HCF49KC?ref=ppx_yo2ov_dt_b_fed_asin_title)                 | \* Cheap<br>\* Good Form Factor<br>\* Nice Looking                                               | \* Tiny Contact Area<br>\* Poor Tactile Feedback | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![](pushbuttonchoice1.jpg)<br> Small push button from digikey<br>$0.44/each<br>[link to product](https://www.digikey.com/en/products/detail/e-switch/TL2233OA/15220943)                 | \* 6 Pin Switch<br>\* Larger Button Area<br>\* Decent Size                                               | \* A little more expensive<br>\* A little ugly | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![](pushbuttonchoice2.jpg)<br> Another small push button from digikey<br>$1.96/each<br>[link to product](https://www.digikey.com/en/products/detail/panasonic-industry/ESB-33535A/3873298)                 | \* 6 Pin Switch<br>\* Decent Button Area<br>\* Meets surface mount constraint of project                                               | \* Really Expensive<br>\* Pretty Ugly |
 
-**Rationale:** A clock oscillator is easier ....
+### Final Choice: Option 1
+
+## Decision Making Process
+ Button option 1 is a decently sized button that looks decent while also being the most inexpensive option. It is a clear choice for the subsystem.
+
+# Final Major Components:
+* Voltage Regulator: LM2575
+* Microcontroller: ESP32
+* Screen: Adafruit 1.3" OLED Display
