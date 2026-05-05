@@ -11,23 +11,20 @@ as part of<br>
 for<br>
 <font size= "5"> Team 306 </font><br>
 
-**Submission: 1, 18, 2026**
+**Submission: 5/4/2026**
 </center>
 
 ## Introduction
 
-* **This needs to be updated so that a reader gets an idea of the purpose of this datasheet.**
+This is the report document for the Human Machine Interface subsystem as part of Team 306's Subterranian Rover. 
 
 ### Project Summary
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.](https://egr314-s-2026-306.github.io/Team306.github.io/)
+Our project is to develop a functional subterranian rover. The rover should be able to sense magnetic readings from the earth, aswell as drill into it. It will use a motor aswell as a hall effect sensor to do that. There is also a wireless communication subsystem, meant to aid in communication between the main rover and a seperate human machine interface subsystem. The HMI subsystem will be the control panel where commands are sent out to sensors and motors, aswell as data values received back from those same systems. 
+
+Our team report is available [*here*](https://egr314-s-2026-306.github.io/Team306.github.io/)
  
 ### My Contribution
 
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
-
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/04-BOM/BOM/) section of the datasheet.
-
->Continue for all the remaining/missing sections.
+My subsystem is meant to perform the Human Machine Interface functionality.
+To review details of the subsystem, all information is sorted into categories available from the top navigation bar.
